@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <div class="back">
+                <div class="leftside">
+                    <nav>
+                        <div class="navigation" id="topnav">
+                            <a href="" class="active">Home</a>
+                            |<a href="">About</a>
+                            |<a href="">Projects</a>
+                            |<a href="">Contact</a>
+                        </div>
+
+                    </nav>
+
+                </div>
+
+                <div class="rightside">
+                    <div class="text">Port<span class="txt1">folio</span></div>
+        
+                        <ul class="menu">
+                            <div class="info">
+                                <img src="Assets/Photo.png" alt="smiley">
+                                <div class="text">Arash<span class="txt1">Thapa</span></div>
+                            </div>
+                            <div class="itemlist">
+                                <li><a class="menuItem" href="index.html"><span class="material-icons">home</span>Home</a></li>
+                                <li><a class="menuItem" href=""><span class="material-icons">info</span>About</a></li>
+                                <li><a class="menuItem" href="#"><span class="material-icons">account_tree</span>Projects</a></li>
+                                <li><a class="menuItem" href="#"><span class="material-icons">contacts</span>Contact</a></li>
+                            </div>
+                        </ul>    
+                    
+                    <button class="hamburger">
+                        <i class="menuIcon material-icons">menu</i>
+                        <i class="closeIcon material-icons">close</i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fore">
+
+                <div class="description">
+                    <div class="firstline"> Hello, I am</div>
+                    <div class="secondline">Arash Thapa</div>
+                    <div class="thirdline">I am a passionate</div>
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+
+                    <div class="btn">
+                        <button class="button" onclick="promptbox()">Download Resume</button>
+                    </div>
+
+                </div>
+                <div class="image">
+                    <img src="Assets/Photo.png" alt="">
+                </div>
+
+
+
+
+            </div>
+        </div>
+        
+        <div class="passwordbox" id="prompt">
+            <div class="passwordform">
+                <h1 id="heading"> "Require Password" </h1>
+                <h3>Enter Download Password:</h3>
+                <div class="passwordfield">
+                    <input type="password" id = "pdfPassword" />
+                    <i class="fa-solid fa-eye" id = "eye" onclick="showPassword()"></i>
+                </div>
+                <button class="cancel" onclick="cancelDownload()">Cancel</button>
+                <button class="download" onclick="downloadpdf('Arash_Resume.pdf')">OK</button>
+                
+            </div>
+            
+        </div>
+
+    </main>
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="portfolio.js"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+/* ------------BACKGROUND---------------*/
+.back {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.leftside {
+  width: 70%;
+  background-color: rgba(217, 217, 217, 1);
+}
+
+.rightside {
+  width: 30%;
+  align-items: center;
+  background-color: rgba(17, 39, 159, 1);
+}
+
+.text {
+  margin: 30px 0;
+  text-align: center;
+  color: #fff;
+  font-family: Satisfy;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.txt1 {
+  color: #4fdc0d;
+}
+
+/*---Navbar---*/
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  margin-top: 30px;
+  align-items: center;
+  width: 40%;
+  padding: 5px;
+  transform: rotate(-0.314deg);
+  border: 0px solid #000;
+  text-align: center;
+  background: #11279f;
+  color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navigation a {
+  justify-content: center;
+  display: inline;
+  text-decoration: none;
+  color: #fff;
+  font-family: Reem Kufi;
+  font-size: 1.5vw;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.navigation a.active {
+  color: #4fdc0d;
+}
+
+.navigation a:hover {
+  color: rgba(246, 214, 7, 0.921);
+}
+
+/* ------------FOREGROUND---------------*/
+.fore {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  margin: 14%;
+  width: 80%;
+}
+
+.image {
+  align-items: left;
+}
+
+.image img {
+  height: 50vh;
+  margin-left: 9%;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.description {
+  margin-top: 5vh;
+}
+
+.firstline {
+  color: #000;
+  font-family: Questrial;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.secondline {
+  color: #13ae5c;
+  font-family: Kaushan Script;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.thirdline {
+  color: #000;
+  font-family: Questrial;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#element {
+  color: #11279f;
+  font-family: Aclonica;
+  font-size: 5vw;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn {
+  margin-top: 10vh;
+  display: flexbox;
+}
+
+.button {
+  align-items: center;
+  cursor: pointer;
+  font-family: questrial;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 1.5vw;
+  padding: 8px 20px;
+  transform: rotate(-0.314deg);
+  border: 0px solid #000;
+  text-align: center;
+  background: #13ae5c;
+  color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  color: rgba(246, 214, 7, 0.921);
+}
+.menu,
+.hamburger {
+  display: none;
+}
+
+/* Password Box to download CV */
+
+#prompt {
+  display: none;
+  background-color: rgba(217, 217, 217, 0.947);
+  width: 100vw;
+  height: 100vh;
+}
+.passwordform {
+  background: hwb(240 99% 0%);
+  border-radius: 20px;
+  text-align: center;
+  height: fit-content;
+  margin: auto;
+  padding: 30px;
+}
+.passwordform h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: "Noto Sans Syriac Eastern", sans-serif;
+  font-size: 200%;
+  color: rgba(81, 79, 79, 0.945);
+}
+.passwordform h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Karla", sans-serif;
+  font-size: 100%;
+  color: grey;
+}
+
+.passwordfield {
+  position: relative;
+  width: 100%;
+}
+.passwordfield input {
+  width: 80%;
+  outline: none;
+  height: 35px;
+  border-radius: 5px;
+  border-color: grey;
+  font-family: "Noto Sans Syriac Eastern", sans-serif;
+  font-size: 100%;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.passwordfield input:focus {
+  border: 3px solid #555;
+}
+.passwordfield i {
+  position: absolute;
+  padding: 6px;
+  border-radius: 5px;
+  right: 11%;
+  z-index: 2;
+  top: 6px;
+  cursor: pointer;
+  color: black;
+}
+.passwordform button {
+  margin-bottom: 20px;
+  margin-right: 5px;
+  font-family: "Noto Sans Syriac Eastern", sans-serif;
+  font-size: 110%;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  border: 1px transparent;
+  border-radius: 5px;
+}
+.passwordform button:hover {
+  cursor: pointer;
+}
+.download {
+  background: rgb(38, 231, 38);
+}
+.cancel {
+  background: red;
+}
+
+/* Use a media query to add a breakpoint at 600px: */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgba(217, 217, 217, 1);
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .threedot {
+    flex-direction: row-reverse;
+  }
+  .threedot div {
+    width: 3vh;
+    height: 0.5vh;
+    background-color: #fff;
+    margin: 5px 0 5px;
+  }
+
+  .back {
+    width: 100%;
+  }
+
+  .leftside {
+    display: none;
+  }
+  .rightside {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .text {
+    text-align: left;
+    margin: 10px 0px 0 40px;
+    font-size: 4.5vh;
+    width: 80%;
+  }
+  .txt1 {
+    font-size: 4.5vh;
+  }
+
+  .navigation {
+    display: block;
+  }
+  .navigation .a {
+    width: 100%;
+    height: 10vh;
+  }
+
+  /* Content Part */
+  .fore {
+    display: block;
+    padding: 10% 10% 0% 10%;
+    margin: 0;
+    width: 80%;
+  }
+  .image {
+    display: block;
+  }
+  .image img {
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    height: 50vh;
+    margin-left: 0%;
+    padding-bottom: 10px;
+  }
+  .firstline {
+    font-size: 3.5vh;
+  }
+  .secondline {
+    font-size: 8vh;
+  }
+  .thirdline {
+    font-size: 5vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #element {
+    font-size: 8vh;
+  }
+  .btn {
+    margin: 2vh 0px;
+  }
+  .button {
+    font-size: 1.5rem;
+    width: 40vw;
+  }
+
+  /* NAVIGATION_MENU */
+  .hamburger {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    margin-right: 1%;
+    z-index: 100;
+    padding: 4px;
+    cursor: pointer;
+    background: #11279f;
+  }
+  .menuIcon {
+    color: white;
+  }
+
+  .closeIcon {
+    display: none;
+    color: #fff;
+  }
+  .itemlist {
+    margin-top: 10px;
+  }
+
+  .sidebar {
+    background-color: #000;
+    width: 100%;
+  }
+
+  .menuItem {
+    display: block;
+    font-size: 5vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25vw;
+    color: whitesmoke;
+    text-decoration: none;
+    border-bottom: white solid 1px;
+    font-family: questrial;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .menuItem:hover {
+    background: rgba(246, 214, 7, 0.921);
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background: linear-gradient(
+      30deg,
+      #000,
+      #11279f,
+      rgba(217, 217, 217, 1),
+      #23d5ab
+    );
+    list-style: none;
+    width: 70%;
+    float: right;
+    text-align: center;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .menu info {
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  .menu img {
+    margin-top: 15px;
+    height: 25vw;
+  }
+  .menu .text {
+    color: #11279f;
+    font-size: 7vw;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .menu .txt1 {
+    font-size: 6vw;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  .itemlist span {
+    margin-left: 3vw;
+    float: left;
+  }
+
+  /* CutomPrompt */
+  .passwordform {
+    width: 80vw;
+    padding: 10px;
+  }
+  .passwordform h1 {
+    font-size: 150%;
+  }
+  .passwordform h3 {
+    font-size: 90%;
+  }
+}
